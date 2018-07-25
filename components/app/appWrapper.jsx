@@ -16,7 +16,7 @@ const mapStateToProps = state => {
 
 const mapDispatchToProps = dispatch => {
     return {
-        initializeState: () => dispatch(initializeState())
+        initializeState: initializeState
     };
 }
 

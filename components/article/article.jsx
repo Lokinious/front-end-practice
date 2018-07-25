@@ -5,8 +5,10 @@ class Article extends Component {
 
     constructor(props){
         super(props)
-        isErrorLoadingCoinNews = this.props.isErrorLoadingCoinNews
-        retrieveCoinNews = this.props.retrieveCoinNews
+    }
+
+    componentDidMount(){
+        this.props.loadCoinNews()
     }
 
     render(){

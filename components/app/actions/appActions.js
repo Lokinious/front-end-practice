@@ -6,7 +6,7 @@ import {
 } from './appActionTypes'
 
 const initializeState = () => (dispatch, getState) => {
-    console.log(getState().appInit.isLoadingCoinNews)
+
 }
 
 const setIsLoadingCoinNews = value => {

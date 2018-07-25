@@ -8,7 +8,10 @@ const getTopNewsFromApi = () => {
         .then(function (articles) { console.log(articles) })
         .catch(function (error) { console.log(error) })
 }
- 
+
+const getApi = () => {
+    return Api
+}
 // // Get top news for Bitcoin
 // Api.getTopNewsByCoin("bitcoin")
 //     .then(function (articles) { console.log(articles) }) 
@@ -41,6 +44,6 @@ const getTopNewsFromApi = () => {
 
 
 export {
-    Api,
+    getApi,
     getTopNewsFromApi
 }

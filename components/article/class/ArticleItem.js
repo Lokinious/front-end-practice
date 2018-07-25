@@ -1,0 +1,9 @@
+
+class ArticleItem {
+
+    constructor(data){
+
+    }
+
+    
+}

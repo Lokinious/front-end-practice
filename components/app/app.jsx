@@ -2,7 +2,7 @@ import classNames from 'classnames'
 import React, {Component} from 'react'
 
 import './app.scss'
-import {getCoins} from '../api/cryptoCoins'
+import ArticleWrapper from '../article/articleWrapper'
 
 class App extends Component{
 
@@ -19,7 +19,7 @@ class App extends Component{
 
         return (
             <div className="app">
-
+                <ArticleWrapper/>
             </div>
         )
     }
