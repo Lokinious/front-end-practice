@@ -27,6 +27,7 @@
     "babel-polyfill": "^6.26.0",
     "build": "^0.1.4",
     "classnames": "^2.2.5",
+    "coinmarketcap-api": "^2.3.2",
     "create-canvas": "^1.0.2",
     "crypto-news-api": "^2.2.0",
     "jquery": "^3.3.1",

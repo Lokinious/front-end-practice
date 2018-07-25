@@ -1,8 +1,20 @@
 import {connect} from 'react-redux'
 import App from './app'
 
+import {
+    initializeState,
+    isErrorLoadingCoins,
+    isErrorLoadingCoinNews,
+    isErrorLoadingUser,
+    retrieveCoins,
+    retrieveCoinNews,
+    retrieveUserFavs
+} from './actions/appActions'
+
 const mapStateToProps = state => {
-    return {};
+    return {
+        
+    };
 }
 
 const mapDispatchToProps = dispatch => {

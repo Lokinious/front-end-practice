@@ -2,7 +2,7 @@ import {combineReducers} from 'redux'
 import {
   SET_USER_NAME,
   IS_ERROR_FETCHING_USER_DATA
-} from '../actions/headerActionTypes'
+} from '../components/header/actions/headerActionTypes'
 
 const username = (state = 'N/A', action) => {
   switch (action.type) {
