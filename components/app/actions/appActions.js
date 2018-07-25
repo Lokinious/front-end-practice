@@ -1,64 +1,46 @@
 import {
-    IS_ERROR_LOADING_COINS,
-    IS_ERROR_LOADING_COIN_NEWS,
-    IS_ERROR_LOADING_USER,
-    RETRIEVE_COINS,
-    RETRIEVE_COIN_NEWS,
-    RETRIEVE_USER_FAVS
+    IS_LOADING_COIN_NEWS,
+    IS_LOADING_COINS,
+    IS_LOADING_USER,
+    IS_LOADING_USER_FAVS
 } from './appActionTypes'
 
 const initializeState = () => (dispatch, getState) => {
-
+    console.log(getState().appInit.isLoadingCoinNews)
 }
 
-const isErrorLoadingCoins = value => {
+const setIsLoadingCoinNews = value => {
     return {
-        type: IS_ERROR_LOADING_COINS,
+        type: IS_LOADING_COIN_NEWS,
         value
     }
 }
 
-const isErrorLoadingCoinNews = value => {
+const setIsLoadingCoins = value => {
     return {
-        type: IS_ERROR_LOADING_COIN_NEWS,
+        type: IS_LOADING_COINS,
         value
     }
 }
 
-const isErrorLoadingUser = value => {
+const setIsLoadingUser = value => {
     return {
-        type: IS_ERROR_LOADING_USER,
+        type: IS_LOADING_USER,
         value
     }
 }
 
-const retrieveCoins = value => {
+const setIsLoadingUserFavs = value => {
     return {
-        type: RETRIEVE_COINS,
-        value
-    }
-}
-
-const retrieveCoinNews = value => {
-    return {
-        type: RETRIEVE_COIN_NEWS,
-        value
-    }
-}
-
-const retrieveUserFavs = value => {
-    return {
-        type: RETRIEVE_USER_FAVS,
+        type: IS_LOADING_USER_FAVS,
         value
     }
 }
 
 export {
     initializeState,
-    isErrorLoadingCoins,
-    isErrorLoadingCoinNews,
-    isErrorLoadingUser,
-    retrieveCoins,
-    retrieveCoinNews,
-    retrieveUserFavs
+    setIsLoadingCoinNews,
+    setIsLoadingCoins,
+    setIsLoadingUser,
+    setIsLoadingUserFavs
 }
